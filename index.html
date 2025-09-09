@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
+  <title>Vasanth's Portfolio</title>
   <meta name="description" content="Portfolio of Vasanthakumar Mohan – MSc Business Analytics. Power BI, Python, SQL, ML projects." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,23 +15,24 @@
   </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
-  <!-- Header -->
+  <!-- Header (no blur, no transparency) -->
   <header class="sticky top-0 z-40 border-b border-slate-200 bg-white">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-      <a href="#home" class="font-extrabold tracking-tight text-lg">Portfolio<span class="text-indigo-600">.</span></a>
+      <a href="#home" class="font-extrabold tracking-tight text-lg">Vasanth’s Portfolio<span class="text-indigo-600">.</span></a>
       <nav class="hidden md:flex gap-6 text-sm font-medium">
         <a href="#projects" class="hover:text-indigo-600">Projects</a>
         <a href="#skills" class="hover:text-indigo-600">Skills</a>
         <a href="#experience" class="hover:text-indigo-600">Experience</a>
         <a href="#education" class="hover:text-indigo-600">Education</a>
+        <a href="#certifications" class="hover:text-indigo-600">Certifications</a>
         <a href="#contact" class="hover:text-indigo-600">Contact</a>
       </nav>
       <a href="https://github.com/vasanthgitt" target="_blank" class="inline-flex items-center gap-2 rounded-2xl border px-3 py-1.5 text-sm hover:bg-slate-100">GitHub</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="relative">
+  <!-- Hero (clean) -->
+  <section id="home">
     <div class="mx-auto max-w-6xl px-4 pt-14 pb-10 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
@@ -46,7 +47,7 @@
         </ul>
         <div class="mt-6 flex gap-3">
           <a href="#projects" class="rounded-2xl bg-indigo-600 px-5 py-2.5 text-white font-semibold shadow hover:bg-indigo-700">View Projects</a>
-          <a href="mailto:vasanthakumar3182@gmail.com" class="rounded-2xl border px-5 py-2.5 font-semibold hover:bg-slate-100">Contact</a>
+          <a href="mailto:vasanthkumar3182@gmail.com" class="rounded-2xl border px-5 py-2.5 font-semibold hover:bg-slate-100">Contact</a>
         </div>
         <div class="mt-6 text-sm text-slate-500">Based in Dublin, Ireland</div>
       </div>
@@ -166,13 +167,40 @@
   <section id="education" class="py-12">
     <div class="mx-auto max-w-6xl px-4">
       <h2 class="text-2xl md:text-3xl font-extrabold">Education</h2>
-      <div class="mt-6 rounded-2xl border bg-white p-5">
+    <div class="mt-6 rounded-2xl border bg-white p-5">
         <h3 class="text-lg font-bold">MSc in Business Analytics – Dublin Business School</h3>
         <p class="mt-2 text-sm text-slate-700">2024 – 2025. Coursework and artefact focused on marketing analytics, clustering, and predictive modeling.</p>
       </div>
       <div class="mt-4 rounded-2xl border bg-white p-5">
         <h3 class="text-lg font-bold">B.Tech – Artificial Intelligence and Data Science</h3>
         <p class="mt-2 text-sm text-slate-700">Panimalar Engineering College. Strong foundation in Python, ML, and data visualization.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="py-12 bg-white">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Certifications</h2>
+      <div class="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <!-- Certificate 1 -->
+        <div class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
+          <h3 class="text-lg font-bold">Data Analysis and Visualization with Power BI</h3>
+          <p class="mt-2 text-sm text-slate-700">Issued by Microsoft — 2024</p>
+          <a href="#" target="_blank" class="inline-block mt-3 text-sm text-indigo-600 font-semibold hover:underline">View Certificate →</a>
+        </div>
+        <!-- Certificate 2 -->
+        <div class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
+          <h3 class="text-lg font-bold">Python for Data Science</h3>
+          <p class="mt-2 text-sm text-slate-700">Issued by IBM — 2023</p>
+          <a href="#" target="_blank" class="inline-block mt-3 text-sm text-indigo-600 font-semibold hover:underline">View Certificate →</a>
+        </div>
+        <!-- Certificate 3 -->
+        <div class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
+          <h3 class="text-lg font-bold">Machine Learning Foundations</h3>
+          <p class="mt-2 text-sm text-slate-700">Issued by Coursera — 2023</p>
+          <a href="#" target="_blank" class="inline-block mt-3 text-sm text-indigo-600 font-semibold hover:underline">View Certificate →</a>
+        </div>
       </div>
     </div>
   </section>
