@@ -11,11 +11,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior:smooth }
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji" }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
-  <!-- Header (no blur, no transparency) -->
+  <!-- Header -->
   <header class="sticky top-0 z-40 border-b border-slate-200 bg-white">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <a href="#home" class="font-extrabold tracking-tight text-lg">Vasanth’s Portfolio<span class="text-indigo-600">.</span></a>
@@ -31,7 +31,7 @@
     </div>
   </header>
 
-  <!-- Hero (clean) -->
+  <!-- Hero -->
   <section id="home">
     <div class="mx-auto max-w-6xl px-4 pt-14 pb-10 grid md:grid-cols-2 gap-10 items-center">
       <div>
@@ -39,15 +39,16 @@
           Hi, I'm Vasanth<br/><span class="text-indigo-600">Data Analytics & AI</span> practitioner
         </h1>
         <p class="mt-4 text-slate-700 text-lg">
-          MSc Business Analytics. I turn data into decisions with <b>Python</b>, <b>SQL</b>, and <b>Power BI</b>, and build predictive models that improve marketing outcomes.
+          MSc Business Analytics (DBS). I turn data into decisions with <b>Python</b>, <b>SQL</b>, and <b>Power BI</b>, and build predictive models that improve marketing outcomes.
         </p>
         <ul class="mt-6 space-y-2 text-slate-700">
           <li>• Current focus: <b>Data Analysis & Visualization with Power BI</b> (Microsoft)</li>
           <li>• Interests: customer segmentation, campaign response prediction, XAI</li>
         </ul>
-        <div class="mt-6 flex gap-3">
+        <div class="mt-6 flex flex-wrap gap-3">
           <a href="#projects" class="rounded-2xl bg-indigo-600 px-5 py-2.5 text-white font-semibold shadow hover:bg-indigo-700">View Projects</a>
           <a href="mailto:vasanthkumar3182@gmail.com" class="rounded-2xl border px-5 py-2.5 font-semibold hover:bg-slate-100">Contact</a>
+          <a href="Vasanth_CV.pdf" download class="rounded-2xl border px-5 py-2.5 font-semibold hover:bg-slate-100">Download CV</a>
         </div>
         <div class="mt-6 text-sm text-slate-500">Based in Dublin, Ireland</div>
       </div>
@@ -65,7 +66,7 @@
         <a href="https://github.com/vasanthgitt?tab=repositories" target="_blank" class="text-sm font-semibold text-indigo-600">All repos →</a>
       </div>
       <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-        <!-- Project 1 -->
+        <!-- Example Project -->
         <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
           <div class="text-xs font-semibold tracking-wide text-indigo-600">Machine Learning</div>
           <h3 class="mt-1 text-lg font-bold">Customer Personality + Campaign Response</h3>
@@ -81,36 +82,6 @@
             <a class="rounded-lg border px-3 py-1.5 hover:bg-slate-50" target="_blank" href="#">Report</a>
           </div>
         </article>
-        <!-- Project 2 -->
-        <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
-          <div class="text-xs font-semibold tracking-wide text-indigo-600">Business Intelligence</div>
-          <h3 class="mt-1 text-lg font-bold">Dublin Bikes – Operations Dashboard</h3>
-          <p class="mt-2 text-sm text-slate-700">Power BI dashboard on station fill-rates, peak hours, and fleet balance with DAX measures and geospatial visuals.</p>
-          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-600">
-            <li class="rounded-full bg-slate-100 px-2.5 py-1">Power BI</li>
-            <li class="rounded-full bg-slate-100 px-2.5 py-1">DAX</li>
-            <li class="rounded-full bg-slate-100 px-2.5 py-1">Geospatial</li>
-          </ul>
-          <div class="mt-4 flex gap-3 text-sm">
-            <a class="rounded-lg border px-3 py-1.5 hover:bg-slate-50" target="_blank" href="#">Live</a>
-            <a class="rounded-lg border px-3 py-1.5 hover:bg-slate-50" target="_blank" href="#">Write-up</a>
-          </div>
-        </article>
-        <!-- Project 3 -->
-        <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
-          <div class="text-xs font-semibold tracking-wide text-indigo-600">Data Visualization</div>
-          <h3 class="mt-1 text-lg font-bold">Athlete Performance – Tableau</h3>
-          <p class="mt-2 text-sm text-slate-700">Multi-sheet Tableau dashboard with KPI table, distributions, radar chart, and top-10 highlight logic.</p>
-          <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-600">
-            <li class="rounded-full bg-slate-100 px-2.5 py-1">Tableau</li>
-            <li class="rounded-full bg-slate-100 px-2.5 py-1">EDA</li>
-            <li class="rounded-full bg-slate-100 px-2.5 py-1">Viz Design</li>
-          </ul>
-          <div class="mt-4 flex gap-3 text-sm">
-            <a class="rounded-lg border px-3 py-1.5 hover:bg-slate-50" target="_blank" href="#">Viz</a>
-            <a class="rounded-lg border px-3 py-1.5 hover:bg-slate-50" target="_blank" href="#">Case Study</a>
-          </div>
-        </article>
       </div>
     </div>
   </section>
@@ -122,23 +93,15 @@
       <div class="mt-6 grid md:grid-cols-3 gap-6">
         <div class="rounded-2xl border bg-white p-5">
           <h3 class="font-bold">Analytics & ML</h3>
-          <p class="mt-2 text-sm text-slate-700">Python, Pandas, NumPy, scikit-learn, XGBoost, TensorFlow (ANN/LSTM), SHAP/LIME, EDA, Feature Engineering, Model Evaluation (F1/AUC).</p>
+          <p class="mt-2 text-sm text-slate-700">Python, Pandas, NumPy, scikit-learn, XGBoost, TensorFlow (ANN/LSTM), SHAP/LIME, A/B Testing, Feature Engineering, Model Evaluation (F1/AUC).</p>
         </div>
         <div class="rounded-2xl border bg-white p-5">
           <h3 class="font-bold">BI & Databases</h3>
-          <p class="mt-2 text-sm text-slate-700">Power BI (DAX, Power Query), Tableau, SQL (PostgreSQL/MySQL), Data Modeling, ETL.</p>
+          <p class="mt-2 text-sm text-slate-700">Power BI (DAX, Power Query), Tableau, SQL (PostgreSQL/MySQL, T-SQL, PL/SQL), Data Modeling, ETL, Data Governance & GDPR basics.</p>
         </div>
         <div class="rounded-2xl border bg-white p-5">
           <h3 class="font-bold">Tools & Dev</h3>
           <p class="mt-2 text-sm text-slate-700">Git/GitHub, Jupyter/Colab, Flask/Gradio prototypes, Unity/Blender (AR/VR basics).</p>
-        </div>
-      </div>
-      <div class="mt-8 rounded-2xl border bg-white p-5">
-        <h3 class="font-bold">Badges</h3>
-        <p class="mt-2 text-sm text-slate-700">GitHub Trophies and Top Languages auto-updated from your profile.</p>
-        <div class="mt-4 grid md:grid-cols-2 gap-4">
-          <img class="rounded-lg border" alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=vasanthgitt"/>
-          <img class="rounded-lg border" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs?username=vasanthgitt&show_icons=true&locale=en&layout=compact"/>
         </div>
       </div>
     </div>
@@ -159,6 +122,11 @@
           <h3 class="mt-1 text-lg font-bold">Project Intern – MBCIE</h3>
           <p class="mt-2 text-sm text-slate-700">Completed intensive Metaverse fundamentals; Unity scene design, Blender assets, and real-world use-cases across education and enterprise.</p>
         </div>
+        <div class="rounded-2xl border bg-white p-5">
+          <div class="text-xs font-semibold tracking-wide text-indigo-600">2024 – Present · Dublin</div>
+          <h3 class="mt-1 text-lg font-bold">Part-time Roles – Pizza Hut & Roost Kitchen</h3>
+          <p class="mt-2 text-sm text-slate-700">Hands-on experience in fast-paced operations, teamwork, time management, and customer service. Demonstrated ability to manage responsibilities under pressure, transferable to data & analytics project environments.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -167,7 +135,7 @@
   <section id="education" class="py-12">
     <div class="mx-auto max-w-6xl px-4">
       <h2 class="text-2xl md:text-3xl font-extrabold">Education</h2>
-    <div class="mt-6 rounded-2xl border bg-white p-5">
+      <div class="mt-6 rounded-2xl border bg-white p-5">
         <h3 class="text-lg font-bold">MSc in Business Analytics – Dublin Business School</h3>
         <p class="mt-2 text-sm text-slate-700">2024 – 2025. Coursework and artefact focused on marketing analytics, clustering, and predictive modeling.</p>
       </div>
@@ -183,19 +151,16 @@
     <div class="mx-auto max-w-6xl px-4">
       <h2 class="text-2xl md:text-3xl font-extrabold">Certifications</h2>
       <div class="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-        <!-- Certificate 1 -->
         <div class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
           <h3 class="text-lg font-bold">Data Analysis and Visualization with Power BI</h3>
           <p class="mt-2 text-sm text-slate-700">Issued by Microsoft — 2024</p>
           <a href="#" target="_blank" class="inline-block mt-3 text-sm text-indigo-600 font-semibold hover:underline">View Certificate →</a>
         </div>
-        <!-- Certificate 2 -->
         <div class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
           <h3 class="text-lg font-bold">Python for Data Science</h3>
           <p class="mt-2 text-sm text-slate-700">Issued by IBM — 2023</p>
           <a href="#" target="_blank" class="inline-block mt-3 text-sm text-indigo-600 font-semibold hover:underline">View Certificate →</a>
         </div>
-        <!-- Certificate 3 -->
         <div class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition">
           <h3 class="text-lg font-bold">Machine Learning Foundations</h3>
           <p class="mt-2 text-sm text-slate-700">Issued by Coursera — 2023</p>
