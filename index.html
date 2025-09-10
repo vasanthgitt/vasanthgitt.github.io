@@ -64,7 +64,6 @@
   </section>
   
 <!-- Projects -->
-<!-- Projects -->
 <section id="projects" class="py-12 bg-white">
   <div class="mx-auto max-w-6xl px-4">
     <div class="flex items-end justify-between">
@@ -76,132 +75,130 @@
     <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-8">
 
       <!-- 1) ML Framework -->
-      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col gap-4">
-        <div>
+      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+        <!-- Header + desc -->
+        <div class="flex-1 flex flex-col gap-3">
           <div class="text-xs font-semibold tracking-wide text-indigo-600">Machine Learning</div>
-          <h3 class="mt-1 text-lg font-bold">A Machine Learning Framework for Customer Segmentation and Campaign Response Prediction</h3>
-          <p class="mt-2 text-sm text-slate-700">
-            Developed a machine learning framework that combines customer segmentation (K-Means) with predictive modeling (Random Forest, SVM, XGBoost) to forecast marketing campaign responses. Implemented SMOTE and ROI analysis for actionable targeting.
+          <h3 class="text-lg font-bold">A Machine Learning Framework for Customer Segmentation and Campaign Response Prediction</h3>
+          <p class="text-sm text-slate-700 min-h-[88px]">
+            Developed a machine learning framework combining customer segmentation (K-Means) with predictive models (RF, SVM, XGBoost). Incorporated SMOTE and ROI analysis for targeted campaigns.
           </p>
+          <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Python</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Pandas</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">K-Means</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">XGBoost</li>
+          </ul>
+
+          <!-- Media slot (fixed height) -->
+          <div class="mt-2 h-44 w-full">
+            <a href="YOUR_GRADIO_INTERFACE_LINK" target="_blank" rel="noopener" class="block h-full w-full">
+              <img src="ML_Framework_Gradio.png" alt="ML Framework Preview"
+                   class="h-full w-full rounded-lg object-cover border shadow-lg hover:scale-105 transition" />
+            </a>
+          </div>
         </div>
 
-        <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Python</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Pandas</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">K-Means</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">XGBoost</li>
-        </ul>
-
-        <!-- Uniform media slot -->
-        <div class="h-44 w-full flex justify-center">
-          <a href="YOUR_GRADIO_INTERFACE_LINK" target="_blank" rel="noopener"
-             class="block h-full w-full max-w-md">
-            <img src="ML_Framework_Gradio.png" alt="ML Framework Preview"
-                 class="h-full w-full rounded-lg object-cover border shadow-lg hover:scale-105 transition"/>
-          </a>
-        </div>
-
-        <!-- Buttons pinned at bottom -->
-        <div class="mt-auto flex gap-3 text-sm">
+        <!-- Actions -->
+        <div class="mt-4 flex gap-3 text-sm">
           <a class="rounded-lg border px-3 py-1.5 hover:bg-slate-50" target="_blank" href="https://github.com/vasanthgitt">Code</a>
           <a class="rounded-lg border px-3 py-1.5 hover:bg-slate-50" target="_blank" rel="noopener" href="DBS_Final_Project_Report.pdf">Report</a>
         </div>
       </article>
 
       <!-- 2) EmpowerED -->
-      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col gap-4">
-        <div>
+      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+        <div class="flex-1 flex flex-col gap-3">
           <div class="text-xs font-semibold tracking-wide text-indigo-600">AI / NLP / LLM</div>
-          <h3 class="mt-1 text-lg font-bold">EmpowerED: A Conditional Generative Assistant</h3>
-          <p class="mt-2 text-sm text-slate-700">
-            Unified educational automation platform: text-to-video, resume enhancement & candidate matching, CSV chat/analysis, AV-hall booking, department Q&A, and virtual campus exploration using Gemini (via LangChain), summarization, OCR, embeddings, MoviePy, and Gradio.
+          <h3 class="text-lg font-bold">EmpowerED: A Conditional Generative Assistant</h3>
+          <p class="text-sm text-slate-700 min-h-[88px]">
+            Unified educational automation: text-to-video, resume enhancement & candidate matching, CSV chat/analysis, AV-hall booking, departmental Q&A, and virtual campus exploration using Gemini (LangChain), OCR, embeddings, and MoviePy.
           </p>
+          <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Python</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">LangChain</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Gemini API</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Gradio</li>
+          </ul>
+
+          <div class="mt-2 h-44 w-full">
+            <a href="YOUR_EMPOWERED_PROJECT_LINK" target="_blank" rel="noopener" class="block h-full w-full">
+              <img src="EmpowerED_Preview.png" alt="EmpowerED Preview"
+                   class="h-full w-full rounded-lg object-cover border shadow-lg hover:scale-105 transition" />
+            </a>
+          </div>
         </div>
 
-        <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Python</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">LangChain</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Gemini API</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Gradio</li>
-        </ul>
-
-        <div class="h-44 w-full flex justify-center">
-          <a href="YOUR_EMPOWERED_PROJECT_LINK" target="_blank" rel="noopener"
-             class="block h-full w-full max-w-md">
-            <img src="EmpowerED_Preview.png" alt="EmpowerED Preview"
-                 class="h-full w-full rounded-lg object-cover border shadow-lg hover:scale-105 transition"/>
-          </a>
-        </div>
-
-        <div class="mt-auto flex gap-3 text-sm">
+        <div class="mt-4 flex gap-3 text-sm">
           <a class="rounded-lg border px-3 py-1.5 hover:bg-slate-50" target="_blank" rel="noopener" href="https://github.com/vasanthgitt">Code</a>
           <a class="rounded-lg border px-3 py-1.5 hover:bg-slate-50" target="_blank" rel="noopener" href="EmpowerED_Project_Report.pdf">Report</a>
         </div>
       </article>
 
       <!-- 3) Tamil Nadu Election Analysis -->
-      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col gap-4">
-        <div>
+      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+        <div class="flex-1 flex flex-col gap-3">
           <div class="text-xs font-semibold tracking-wide text-indigo-600">Business Intelligence</div>
-          <h3 class="mt-1 text-lg font-bold">Tamil Nadu Election Results Analysis</h3>
-          <p class="mt-2 text-sm text-slate-700">Interactive Tableau dashboard for constituency results, turnout patterns, party performance, and vote-share trends with geospatial visuals.</p>
-        </div>
+          <h3 class="text-lg font-bold">Tamil Nadu Election Results Analysis</h3>
+          <p class="text-sm text-slate-700 min-h-[88px]">
+            Tableau dashboard for constituency results, turnout patterns, party performance, and vote-share trends with geospatial visuals.
+          </p>
+          <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Tableau</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Geospatial</li>
+          </ul>
 
-        <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Tableau</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Geospatial</li>
-        </ul>
-
-        <div class="h-44 w-full flex justify-center">
-          <a href="https://public.tableau.com/views/TamilNaduElectionResultsAnalysis/TamilNaduelectionanalysis" target="_blank" rel="noopener"
-             class="block h-full w-full max-w-md">
-            <img src="TamilNadu_Dashboard.png" alt="Tamil Nadu Dashboard"
-                 class="h-full w-full rounded-lg object-cover border shadow-lg hover:scale-105 transition"/>
-          </a>
+          <div class="mt-2 h-44 w-full">
+            <a href="https://public.tableau.com/views/TamilNaduElectionResultsAnalysis/TamilNaduelectionanalysis" target="_blank" rel="noopener" class="block h-full w-full">
+              <img src="TamilNadu_Dashboard.png" alt="Tamil Nadu Dashboard"
+                   class="h-full w-full rounded-lg object-cover border shadow-lg hover:scale-105 transition" />
+            </a>
+          </div>
         </div>
       </article>
 
       <!-- 4) NBA Analysis -->
-      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col gap-4">
-        <div>
+      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+        <div class="flex-1 flex flex-col gap-3">
           <div class="text-xs font-semibold tracking-wide text-indigo-600">Data Visualization</div>
-          <h3 class="mt-1 text-lg font-bold">NBA Player Performance Analysis</h3>
-          <p class="mt-2 text-sm text-slate-700">Multi-sheet Tableau dashboard with KPI cards, distributions, trend lines, and parameter-driven comparisons for player/team performance.</p>
-        </div>
+          <h3 class="text-lg font-bold">NBA Player Performance Analysis</h3>
+          <p class="text-sm text-slate-700 min-h-[88px]">
+            Multi-sheet Tableau dashboard with KPI cards, distributions, trend lines, and parameter-driven comparisons for player/team performance.
+          </p>
+          <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Tableau</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Calculated Fields</li>
+          </ul>
 
-        <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Tableau</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Calculated Fields</li>
-        </ul>
-
-        <div class="h-44 w-full flex justify-center">
-          <a href="https://public.tableau.com/views/NBAPLAYERPERFORMANCEANALYSIS/NBAANALYSISDASHBOARD" target="_blank" rel="noopener"
-             class="block h-full w-full max-w-md">
-            <img src="NBA_Dashboard.png" alt="NBA Dashboard"
-                 class="h-full w-full rounded-lg object-cover border shadow-lg hover:scale-105 transition"/>
-          </a>
+          <div class="mt-2 h-44 w-full">
+            <a href="https://public.tableau.com/views/NBAPLAYERPERFORMANCEANALYSIS/NBAANALYSISDASHBOARD" target="_blank" rel="noopener" class="block h-full w-full">
+              <img src="NBA_Dashboard.png" alt="NBA Dashboard"
+                   class="h-full w-full rounded-lg object-cover border shadow-lg hover:scale-105 transition" />
+            </a>
+          </div>
         </div>
       </article>
 
       <!-- 5) Verbi Virtual Odyssey -->
-      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col gap-4">
-        <div>
+      <article class="rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition flex flex-col h-full">
+        <div class="flex-1 flex flex-col gap-3">
           <div class="text-xs font-semibold tracking-wide text-indigo-600">Virtual Reality / Language Learning</div>
-          <h3 class="mt-1 text-lg font-bold">Verbi Virtual Odyssey – Metaverse Project</h3>
-          <p class="mt-2 text-sm text-slate-700">Virtual Tamil learning world inspired by Tamil Nadu streets. Integrated <b>Python with Unity</b> for live translation and immersive tutor interactions.</p>
-        </div>
+          <h3 class="text-lg font-bold">Verbi Virtual Odyssey – Metaverse Project</h3>
+          <p class="text-sm text-slate-700 min-h-[88px]">
+            Virtual Tamil learning world inspired by Tamil Nadu streets. Integrated <b>Python with Unity</b> for live translation and immersive tutor interactions.
+          </p>
+          <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Unity</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Blender</li>
+            <li class="rounded-full bg-slate-100 px-2.5 py-1">Python</li>
+          </ul>
 
-        <ul class="flex flex-wrap gap-2 text-xs text-slate-600">
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Unity</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Blender</li>
-          <li class="rounded-full bg-slate-100 px-2.5 py-1">Python</li>
-        </ul>
-
-        <div class="h-44 w-full flex justify-center">
-          <video class="h-full w-full max-w-md rounded-lg object-cover border shadow-lg" controls>
-            <source src="Verbi_Virtual_Odyssey.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <div class="mt-2 h-44 w-full">
+            <video class="h-full w-full rounded-lg object-cover border shadow-lg" controls>
+              <source src="Verbi_Virtual_Odyssey.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </article>
 
